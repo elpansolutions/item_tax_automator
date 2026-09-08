@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "creation": "2026-09-08 13:58:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_auto_item_tax",
+  "section_tax_categories",
+  "in_state_tax_category",
+  "column_break_1",
+  "out_state_tax_category"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "enable_auto_item_tax",
+   "fieldtype": "Check",
+   "label": "Enable Automatic Item Tax Categories"
+  },
+  {
+   "fieldname": "section_tax_categories",
+   "fieldtype": "Section Break",
+   "label": "Tax Category Configuration"
+  },
+  {
+   "default": "In-State",
+   "description": "Tax category applied to default or in-state tax template rows",
+   "fieldname": "in_state_tax_category",
+   "fieldtype": "Link",
+   "label": "In-State Tax Category",
+   "options": "Tax Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Out-State",
+   "description": "Tax category automatically paired for out-of-state transactions",
+   "fieldname": "out_state_tax_category",
+   "fieldtype": "Link",
+   "label": "Out-State Tax Category",
+   "options": "Tax Category",
+   "reqd": 1
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-08 13:58:00.000000",
+ "modified_by": "Administrator",
+ "module": "Item Tax Automator",
+ "name": "Item Tax Automator Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
